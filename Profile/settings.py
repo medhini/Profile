@@ -55,7 +55,7 @@ WSGI_APPLICATION = 'Profile.wsgi.application'
 from os.path import join
 TEMPLATE_DIRS = (
 	'/home/medhini/django/Profile/Templates',
-	'/home/medhini/django/Profile/userprofile/Templates',
+	'/home/medhini/django/Profile/userprofile/templates',
 )
 
 
@@ -92,17 +92,17 @@ MEDIA_ROOT='/home/medhini/django/Profile/static/'
 
 STATIC_URL = '/static/'
 
-AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
-
 STATIC_ROOT= '/home/medhini/django/Profile/static/assets/' 
 
 STATICFILES_DIRS = (('assets','static'),)
 
-import dj_database_url
+AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
+
+"""import dj_database_url
 DATABASES['default'] =  dj_database_url.config()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']"""
 
 

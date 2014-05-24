@@ -8,10 +8,6 @@ from FileCheck import ContentTypeRestrictedFileField
 def get_upload_file_name(instance, filename):
 	return "uploaded_files/%s_%s" % (str(time()).replace('.', '_'), filename)
 
-def validate_file_extension(value):
-    if not value.name.endswith('.pdf'):
-        raise ValidationError(u'Error message')
-
 import logging
 logr = logging.getLogger(__name__)
 
@@ -19,8 +15,8 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User)
     Follow = models.BooleanField(default=False)
     About_me = models.CharField(max_length=90)
-    picture = models.FileField(upload_to=get_upload_file_name)
-    ContentTypeRestrictedFileField(upload_to='static/assets/', content_types=['image/jpeg','image/png', 'image/bmp', 'image/gif'],max_upload_size=5242880,blank=True, null=True)
+   # picture = models.FileField(upload_to=get_upload_file_name)
+   # ContentTypeRestrictedFileField(upload_to='static/assets/uploaded_files/', content_types=['image/jpeg','image/png', 'image/bmp', 'image/gif'],max_upload_size=5242880,blank=True, null=True)
 
 User.profile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
 

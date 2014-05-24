@@ -14,5 +14,5 @@ urlpatterns = patterns('',
     url(r'^accounts/register/$', 'Profile.views.register_user'),
     url(r'^accounts/register_success/$', 'Profile.views.register_success'),
     url(r'^admin/', include(admin.site.urls)),
-    (r'^user/', include('userprofile.urls')),
+    (r'^accounts/', include('userprofile.urls')),
 )
