@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{% block title %}My Base Template{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static "/static/assets/css/default.css" %}"> 
+	<script src="{% static "/static/assets/js/jquery-2.0.0min.js" %}"
+	<script src="{% static "/static/assets/js/ajax.js" %}"></script> 
+
+</head>
+
+<body> 
+	<div id="page">
+
+	<div id="sidebar">
+		{% block sidebar %}
+		<ul>
+			<li><a href="/articles/all">Articles</a></li>
+			<li><a href="/admin/">Admin</a></li>
+		</ul>
+		{% endblock %}
+	</div>
+
+	<div id="content">
+		{% block content %}This is the content{% endblock %} 
+		<img src="{% static "/static/assets/images/images.jpeg " %}" />
+	</div>
+
+</body>
+</html> 
+
+

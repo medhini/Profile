@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+  
+  <h2>Profile</h2>
+  
+  {% for field in form %}
+    {{field.error}}
+
+  {% endfor %}
+
+  <!--{% if article.thumbnail %}
+  <p><img src="/static/assets/uploaded_files/{{userprofile.thumbnail}}" width="150" /> </p>
+	 Need to resize image and set to appropraite number of bytes 
+  {% endif %}
+
+  linking to the user profile. change URL -->
+  
+  <form action="/user/profile/" method="post">{% csrf_token %} 
+  {{form.as_ul}}
+  
+  <input type="Submit" value="Update" />
+    
+  </form>
+  
+{% endblock %}

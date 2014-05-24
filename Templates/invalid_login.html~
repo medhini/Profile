@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<h2>Sorry.The details you entered are invalid</h2>
+	<p>Click<a href="/accounts/login/">here</a> to try again.</p>
+{% endblock %}
+
