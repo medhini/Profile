@@ -16,7 +16,7 @@
 
   linking to the user profile. change URL 
   
-  <form action="/user/profile/" method="post">{% csrf_token %} 
+  <form action="/accounts/profile/" method="post">{% csrf_token %} 
   {{form.as_ul}}
   
   <input type="Submit" value="Update" />
