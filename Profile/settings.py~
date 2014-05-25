@@ -92,13 +92,11 @@ MEDIA_ROOT='/home/medhini/django/Profile/static/'
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT= '/home/medhini/django/Profile/static/assets/' 
+
+STATICFILES_DIRS = (('assets','static'),)
+
 AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
-
-STATIC_ROOT= 'staticfiles' 
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
 
 """import dj_database_url
 DATABASES['default'] =  dj_database_url.config()
