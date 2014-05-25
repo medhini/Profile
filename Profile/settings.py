@@ -101,11 +101,7 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(PROJECT_DIRECTORY,'static/')
 
-
-STATICFILES_DIRS = (
-    ('assets', os.path.join(os.getcwd(),'static/')),
-)
-
+STATICFILES_DIRS = (('assets','static'),)
 
 
 AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
