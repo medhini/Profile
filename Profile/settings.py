@@ -53,11 +53,11 @@ ROOT_URLCONF = 'Profile.urls'
 WSGI_APPLICATION = 'Profile.wsgi.application'
 
 from os.path import join
-TEMPLATE_DIRS = (
-	'/home/medhini/django/Profile/Templates',
-	'/home/medhini/django/Profile/userprofile/templates',
-)
 
+TEMPLATE_DIRS = (
+                    os.path.join(os.path.dirname(__file__),'Templates'),
+		    os.path.join(os.path.dirname(__file__),'userprofile/templates'),
+)
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
@@ -70,7 +70,7 @@ DATABASES = {
 }
 
 
-MEDIA_ROOT='/home/medhini/django/Profile/static/'
+MEDIA_ROOT='/assets/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
