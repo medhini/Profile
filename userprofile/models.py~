@@ -13,7 +13,7 @@ logr = logging.getLogger(__name__)
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
-    Follow = models.BooleanField(default=False)
+    Allow_email_notifications = models.BooleanField(default=False)
     About_me = models.CharField(max_length=90)
     """picture = models.FileField(upload_to=get_upload_file_name)
     ContentTypeRestrictedFileField(upload_to='static/assets/uploaded_files/', content_types=['image/jpeg','image/png', 'image/bmp', 'image/gif'],max_upload_size=5242880,blank=True, null=True)"""

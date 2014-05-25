@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'userprofile',
+    'south',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -106,11 +107,11 @@ STATICFILES_DIRS = (('assets','staticfiles'),)
 
 AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
 
-import dj_database_url
+"""import dj_database_url
 DATABASES['default'] =  dj_database_url.config()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']"""
 
 
