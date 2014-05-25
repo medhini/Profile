@@ -1,0 +1,93 @@
+2014-05-24T15:02:43.427655+00:00 heroku[api]: Release v2 created by medhini95@gmail.com
+2014-05-24T15:02:43.427590+00:00 heroku[api]: Enable Logplex by medhini95@gmail.com
+2014-05-24T15:03:03+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-24T15:03:23+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Python app
+2014-05-24T15:14:52+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-24T15:15:15+00:00 heroku[slug-compiler]: Slug compilation failed: failed to compile Python app
+2014-05-25T08:50:22+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-25T08:51:18+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-05-25T08:51:18.680844+00:00 heroku[api]: Attach HEROKU_POSTGRESQL_COPPER resource by medhini95@gmail.com
+2014-05-25T08:51:18.680934+00:00 heroku[api]: Release v4 created by medhini95@gmail.com
+2014-05-25T08:51:18.858237+00:00 heroku[api]: Release v5 created by medhini95@gmail.com
+2014-05-25T08:51:18.545375+00:00 heroku[api]: Set DATABASE_URL config vars by medhini95@gmail.com
+2014-05-25T08:51:18.545465+00:00 heroku[api]: Release v3 created by medhini95@gmail.com
+2014-05-25T08:51:18.858151+00:00 heroku[api]: Deploy 3930386 by medhini95@gmail.com
+2014-05-25T09:12:29+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-25T09:12:59+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-05-25T09:12:59.559319+00:00 heroku[api]: Deploy 8aee8e5 by medhini95@gmail.com
+2014-05-25T09:12:59.559412+00:00 heroku[api]: Release v6 created by medhini95@gmail.com
+2014-05-25T09:13:05.134788+00:00 heroku[api]: Starting process with command `python ./manage.py collectstatic --noinput` by medhini95@gmail.com
+2014-05-25T09:13:09.801085+00:00 heroku[run.9769]: State changed from starting to up
+2014-05-25T09:13:11.255545+00:00 heroku[run.9769]: State changed from up to complete
+2014-05-25T09:13:09.642669+00:00 heroku[run.9769]: Awaiting client
+2014-05-25T09:13:09.678250+00:00 heroku[run.9769]: Starting process with command `python ./manage.py collectstatic --noinput`
+2014-05-25T09:13:11.243788+00:00 heroku[run.9769]: Process exited with status 1
+2014-05-25T09:23:34.196377+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path=/ host=fierce-plateau-4138.herokuapp.com request_id=57e69c17-4bf8-4d97-ae5e-158bf45022f3 fwd="122.171.82.122" dyno= connect= service= status=503 bytes=
+2014-05-25T09:23:35.302043+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path=/favicon.ico host=fierce-plateau-4138.herokuapp.com request_id=346aebba-daef-4ce8-acb7-6579d3832f77 fwd="122.171.82.122" dyno= connect= service= status=503 bytes=
+2014-05-25T09:23:35.615383+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path=/favicon.ico host=fierce-plateau-4138.herokuapp.com request_id=caa3604a-5bf8-492f-a832-488c1a17ddd8 fwd="122.171.82.122" dyno= connect= service= status=503 bytes=
+2014-05-25T09:50:21.540377+00:00 heroku[api]: Starting process with command `python manage.py syncdb` by medhini95@gmail.com
+2014-05-25T09:50:27.180211+00:00 heroku[run.9671]: Starting process with command `python manage.py syncdb`
+2014-05-25T09:50:27.139774+00:00 heroku[run.9671]: Awaiting client
+2014-05-25T09:50:27.219492+00:00 heroku[run.9671]: State changed from starting to up
+2014-05-25T09:50:29.008436+00:00 heroku[run.9671]: State changed from up to complete
+2014-05-25T09:50:28.996934+00:00 heroku[run.9671]: Process exited with status 1
+2014-05-25T11:27:20+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-25T11:28:01+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-05-25T11:28:01.696036+00:00 heroku[api]: Deploy 8c03656 by medhini95@gmail.com
+2014-05-25T11:28:01.696123+00:00 heroku[api]: Release v7 created by medhini95@gmail.com
+2014-05-25T11:31:16.719317+00:00 heroku[api]: Starting process with command `syncdb` by medhini95@gmail.com
+2014-05-25T11:31:21.853584+00:00 heroku[run.5287]: State changed from starting to up
+2014-05-25T11:31:23.248106+00:00 heroku[run.5287]: State changed from up to complete
+2014-05-25T11:31:21.743138+00:00 heroku[run.5287]: Awaiting client
+2014-05-25T11:31:21.775395+00:00 heroku[run.5287]: Starting process with command `syncdb`
+2014-05-25T11:31:23.230706+00:00 heroku[run.5287]: Process exited with status 127
+2014-05-25T11:31:40.815548+00:00 heroku[api]: Starting process with command `python./manage.py syncdb` by medhini95@gmail.com
+2014-05-25T11:31:48.357595+00:00 heroku[run.5446]: State changed from starting to up
+2014-05-25T11:31:48.244740+00:00 heroku[run.5446]: Awaiting client
+2014-05-25T11:31:48.316660+00:00 heroku[run.5446]: Starting process with command `python./manage.py syncdb`
+2014-05-25T11:31:49.937637+00:00 heroku[run.5446]: State changed from up to complete
+2014-05-25T11:31:49.923145+00:00 heroku[run.5446]: Process exited with status 127
+2014-05-25T11:32:42.326673+00:00 heroku[api]: Starting process with command `python manage.py syncdb` by medhini95@gmail.com
+2014-05-25T11:32:52.230705+00:00 heroku[run.7703]: State changed from starting to up
+2014-05-25T11:32:52.482365+00:00 heroku[run.7703]: Awaiting client
+2014-05-25T11:32:52.520212+00:00 heroku[run.7703]: Starting process with command `python manage.py syncdb`
+2014-05-25T11:32:54.571223+00:00 heroku[run.7703]: Process exited with status 0
+2014-05-25T11:32:59.042133+00:00 heroku[run.7703]: State changed from up to complete
+2014-05-25T11:33:03.172334+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path=/ host=fierce-plateau-4138.herokuapp.com request_id=6f53701a-5f67-4300-a397-2de74036c28f fwd="122.172.67.35" dyno= connect= service= status=503 bytes=
+2014-05-25T11:33:04.172005+00:00 heroku[router]: at=error code=H14 desc="No web processes running" method=GET path=/favicon.ico host=fierce-plateau-4138.herokuapp.com request_id=8d7d020d-9a69-4a07-ad54-7e3d01c401b3 fwd="122.172.67.35" dyno= connect= service= status=503 bytes=
+2014-05-25T11:48:17+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-25T11:48:47+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-05-25T11:48:47.783116+00:00 heroku[api]: Release v8 created by medhini95@gmail.com
+2014-05-25T11:48:47.783050+00:00 heroku[api]: Deploy 8976371 by medhini95@gmail.com
+2014-05-25T11:49:15.492778+00:00 heroku[api]: Scale to web=1 by medhini95@gmail.com
+2014-05-25T11:49:23.597759+00:00 app[web.1]: bash: gunicorn: command not found
+2014-05-25T11:49:25.040736+00:00 heroku[web.1]: State changed from crashed to starting
+2014-05-25T11:49:25.039967+00:00 heroku[web.1]: State changed from starting to crashed
+2014-05-25T11:49:22.452104+00:00 heroku[web.1]: Starting process with command `gunicorn Profile.wsgi`
+2014-05-25T11:49:25.027865+00:00 heroku[web.1]: Process exited with status 127
+2014-05-25T11:49:30.763199+00:00 app[web.1]: bash: gunicorn: command not found
+2014-05-25T11:49:29.993288+00:00 heroku[web.1]: Starting process with command `gunicorn Profile.wsgi`
+2014-05-25T11:49:32.049342+00:00 heroku[web.1]: Process exited with status 127
+2014-05-25T11:49:32.061528+00:00 heroku[web.1]: State changed from starting to crashed
+2014-05-25T11:50:45.637555+00:00 heroku[api]: Scale to web=1 by medhini95@gmail.com
+2014-05-25T11:50:52.684273+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=fierce-plateau-4138.herokuapp.com request_id=4eec923c-de02-4f27-af76-74459fe1d8c3 fwd="122.172.67.35" dyno= connect= service= status=503 bytes=
+2014-05-25T12:04:26+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-25T12:04:50+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-05-25T12:04:50.555179+00:00 heroku[web.1]: State changed from crashed to starting
+2014-05-25T12:04:49.934946+00:00 heroku[api]: Deploy 7950567 by medhini95@gmail.com
+2014-05-25T12:04:49.934946+00:00 heroku[api]: Release v9 created by medhini95@gmail.com
+2014-05-25T12:04:56.523324+00:00 app[web.1]: bash: gunicorn: command not found
+2014-05-25T12:04:57.738195+00:00 heroku[web.1]: State changed from starting to crashed
+2014-05-25T12:04:57.738997+00:00 heroku[web.1]: State changed from crashed to starting
+2014-05-25T12:04:55.675161+00:00 heroku[web.1]: Starting process with command `gunicorn Profile.wsgi`
+2014-05-25T12:04:57.725812+00:00 heroku[web.1]: Process exited with status 127
+2014-05-25T12:05:03.127686+00:00 app[web.1]: bash: gunicorn: command not found
+2014-05-25T12:05:04.531613+00:00 heroku[web.1]: State changed from starting to crashed
+2014-05-25T12:05:02.089666+00:00 heroku[web.1]: Starting process with command `gunicorn Profile.wsgi`
+2014-05-25T12:05:04.506548+00:00 heroku[web.1]: Process exited with status 127
+2014-05-25T12:06:20.825437+00:00 heroku[api]: Starting process with command `python manage.py collectstatic --dry-run --noinput` by medhini95@gmail.com
+2014-05-25T12:06:26.305922+00:00 heroku[run.6072]: State changed from starting to up
+2014-05-25T12:06:28.091665+00:00 heroku[run.6072]: State changed from up to complete
+2014-05-25T12:06:26.197084+00:00 heroku[run.6072]: Awaiting client
+2014-05-25T12:06:26.248759+00:00 heroku[run.6072]: Starting process with command `python manage.py collectstatic --dry-run --noinput`
+2014-05-25T12:06:28.079165+00:00 heroku[run.6072]: Process exited with status 1
