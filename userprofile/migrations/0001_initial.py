@@ -12,8 +12,8 @@ class Migration(SchemaMigration):
         db.create_table('userprofile_userprofile', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('user', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'], unique=True)),
-            ('likes_user', self.gf('django.db.models.fields.BooleanField')(default=False)),
-            ('fav_name', self.gf('django.db.models.fields.CharField')(max_length=50)),
+            ('Allow_email_notifications', self.gf('django.db.models.fields.BooleanField')(default=False)),
+            ('About_me', self.gf('django.db.models.fields.CharField')(max_length=50)),
         ))
         db.send_create_signal('userprofile', ['UserProfile'])
 
@@ -62,9 +62,9 @@ class Migration(SchemaMigration):
         },
         'userprofile.userprofile': {
             'Meta': {'object_name': 'UserProfile'},
-            'fav_name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
+            'About_me': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'likes_user': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'Allow_email_notifications': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'user': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['auth.User']", 'unique': 'True'})
         }
     }
