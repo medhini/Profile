@@ -6,6 +6,10 @@
 	<form action="/accounts/register/" method="post">{% csrf_token %}
 	{{form}}
 
+	<ul>
+ 	 {{form.as_ul}}
+ 	 </ul> 
+
 	<input type="submit" value="Register" />
 
 	</form>
