@@ -99,11 +99,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT= 'staticfiles' 
+STATIC_ROOT = os.path.join(PROJECT_DIRECTORY,'static/')
+
 
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_DIRECTORY, 'static'),
+    ('assets', os.path.join(os.getcwd(),'static/')),
 )
+
 
 
 AUTH_PROFILE_MODULE = 'userprofile.UserProfile'
