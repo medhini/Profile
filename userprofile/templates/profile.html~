@@ -10,7 +10,7 @@
   {% endfor %}
 
   {% if article.thumbnail %}
-  <p><img src="/static/assets/uploaded_files/{{userprofile.picture}}" width="150" /> </p>
+  <p><img src="/static/assets/{{userprofile.picture}}" width="150" /> </p>
 	 Need to resize image and set to appropraite number of bytes 
   {% endif %}
 

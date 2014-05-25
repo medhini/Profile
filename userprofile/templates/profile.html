@@ -9,12 +9,9 @@
 
   {% endfor %}
 
-  {% if article.thumbnail %}
+  {% if article.picture %}
   <p><img src="/static/assets/{{userprofile.picture}}" width="150" /> </p>
-	 Need to resize image and set to appropraite number of bytes 
   {% endif %}
-
-  linking to the user profile. change URL 
   
   <form action="/accounts/profile/" method="post">{% csrf_token %} 
   {{form.as_ul}}
