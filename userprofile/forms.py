@@ -5,4 +5,4 @@ class UserProfileForm(forms.ModelForm):
     
     class Meta:
         model = UserProfile 
-        fields = ('Follow', 'About_me')
+        fields = ('Allow_email_notifications', 'About_me')
