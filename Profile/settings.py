@@ -59,6 +59,15 @@ TEMPLATE_DIRS = (
 		    os.path.join(os.path.dirname(__file__),'userprofile/templates'),
 )
 
+
+PROJECT_DIRECTORY = os.getcwd() 
+
+
+TEMPLATE_DIRS = (
+    os.path.join(PROJECT_DIRECTORY,'Templates/'),
+    os.path.join(PROJECT_DIRECTORY,'userprofile/templates/'),
+)
+
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
