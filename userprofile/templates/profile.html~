@@ -22,7 +22,7 @@
     
   </form>
 
-  <p><a href="/accounts/password_reset_form/">Change password</a></p>
+  <p><a href="/accounts/profile/password_reset_form/">Change password</a></p>
   
 {% endblock %}
 
