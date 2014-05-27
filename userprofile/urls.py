@@ -3,7 +3,7 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('',
         url(r'^profile/$', 'userprofile.views.user_profile'),
     	url(r'^profile/password/reset/$', 
-        'django.contrib.auth.views.password_reset', 
+        django.contrib.auth.views.password_reset, 
         {'post_reset_redirect' : '/profile/password/reset/done/'},
         name="password_reset"),
     (r'^profile/password/reset/done/$',
