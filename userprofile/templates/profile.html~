@@ -9,19 +9,21 @@
 
   {% endfor %}
 
-  {% if userprofile.picture %}
+  <!--{% if userprofile.picture %}
   <p><img src="/static/assets/{{userprofile.picture}}" width="150" /> </p>
-  {% endif %}
+  {% endif %}-->
   
-  <form action="/accounts/profile/" method="post" enctype="multipart/form-data">{% csrf_token %}
+  <form action="/accounts/profile/" method="post" >{% csrf_token %}
   <ul>
   {{form.as_ul}}
-  </ul>  
+  </ul> 
 
   <input type="Submit" value="Update" />
     
   </form>
+
+  <p><a href="/accounts/password_reset_form/">Change password</a></p>
   
 {% endblock %}
 
-
+<!--enctype="multipart/form-data"-->

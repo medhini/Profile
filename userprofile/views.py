@@ -3,7 +3,8 @@ from django.http import HttpResponseRedirect
 from django.core.context_processors import csrf
 from forms import UserProfileForm
 from django.contrib.auth.decorators import login_required 
-
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate
 
 @login_required
 def user_profile(request):
