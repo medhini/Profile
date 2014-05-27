@@ -58,7 +58,18 @@ TEMPLATE_DIRS = (
                     os.path.join(os.path.dirname(__file__),'Templates'),
 		    os.path.join(os.path.dirname(__file__),'userprofile/templates'),
 )
+TEMPLATE_CONTEXT_PROCESSORS = {
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.request',  
+    'django.contrib.messages.context_processors.messages',
+}
 
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+#     'django.template.loaders.eggs.Loader',
+)
+ 
 
 PROJECT_DIRECTORY = os.getcwd() 
 
